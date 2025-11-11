@@ -51,7 +51,7 @@ const Trang1 = () => {
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "translateY(-8px)";
               e.currentTarget.style.boxShadow =
-                "0 8px 25px rgba(255, 0, 0, 0.25)";
+                "0 8px 25px rgba(0, 255, 0, 0.25)";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = "translateY(0)";
