@@ -37,7 +37,7 @@ const Member = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#0d0d0d", // nền đen sâu
+        backgroundColor: "#f2f5ed", // nền đen sâu
         padding: "40px",
         fontFamily: "Inter, sans-serif",
         color: "#f5f5f5",
