@@ -13,7 +13,7 @@ const Footer = () => {
           </div>
           <div class="content_footer">
             <h2> Vùng Đất Của Những Câu Chuyện</h2>
-            <p>Địa chỉ: Yongsan Trade Center, Yongsan-gu, Seoul, Hàn Quốc</p>
+            <p>Địa chỉ: Xứ sở thần tiên</p>
 
             <p>Hotline: 0961 12 10 18 - 0962 12 10 18 - 0013 06 20 13</p>
 
