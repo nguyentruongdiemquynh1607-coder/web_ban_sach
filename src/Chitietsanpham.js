@@ -31,7 +31,7 @@ export default function Chitietsanpham() {
         style={{
           background: "none",
           color: "#fff",
-          border: "1px solid #b22222",
+          border: "1px solid #94ffa0" /*nút back */,
           padding: "6px 16px",
           borderRadius: "5px",
           cursor: "pointer",
@@ -40,7 +40,7 @@ export default function Chitietsanpham() {
           transition: "all 0.3s",
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.background = "#b22222";
+          e.currentTarget.style.background = "#94ffa0";
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.background = "none";
