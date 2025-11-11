@@ -8,7 +8,7 @@ const Trang1 = () => {
   return (
     <div
       style={{
-        background: "linear-gradient(to bottom, #000000, #1a0000)",
+        background: "linear-gradient(to bottom, #000000, #91fa9d)",
         color: "#fff",
         minHeight: "100vh",
         padding: "60px 80px",
@@ -22,7 +22,7 @@ const Trang1 = () => {
           display: "inline-block",
           marginBottom: "40px",
           paddingBottom: "10px",
-          borderBottom: "2px solid #b22222",
+          borderBottom: "2px solid #91fa9d" /*viền đỏ neon*/,
         }}
       >
         Danh sách sản phẩm
@@ -40,7 +40,7 @@ const Trang1 = () => {
             key={p.id}
             onClick={() => navigate(`/sanpham/${p.id}`)}
             style={{
-              backgroundColor: "#212020",
+              backgroundColor: "#212020" /*khoảng để tên*/,
               borderRadius: "16px",
               overflow: "hidden",
               textAlign: "center",
