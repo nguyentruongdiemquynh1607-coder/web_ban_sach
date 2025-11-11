@@ -6,13 +6,13 @@ const Footer = () => {
           <div class="logo_footer">
             <a href="">
               <img
-                src="https://images.steamusercontent.com/ugc/1002557426859115452/206DD146F4D17A8A627D2A1FC97719608A58BCEB/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
+                src="https://i.pinimg.com/736x/38/66/63/3866638f44d875703830aa690dbf20af.jpg"
                 alt="Logo"
               />
             </a>
           </div>
           <div class="content_footer">
-            <h2> T1 ENTERTAINMENT</h2>
+            <h2> Vùng Đất Của Những Câu Chuyện</h2>
             <p>Địa chỉ: Yongsan Trade Center, Yongsan-gu, Seoul, Hàn Quốc</p>
 
             <p>Hotline: 0961 12 10 18 - 0962 12 10 18 - 0013 06 20 13</p>
