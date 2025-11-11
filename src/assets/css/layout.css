@@ -55,7 +55,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 body {
   width: 100%;
-  background: #fff; /*chỗ logo*/
+  background: #fffbef; /*chỗ logo*/
   font-family: "RobotoSlab-Regular";
   font-size: 14px;
 }
@@ -98,7 +98,7 @@ a {
   position: relative;
 }
 #header .header_top {
-  background: #080000;
+  background: #00804b;
   padding: 8px 0;
 }
 #header .header_top .container_main {
@@ -130,13 +130,13 @@ a {
 #header .menu_top ul li a {
   font-family: "RobotoSlab-Bold";
   font-size: 14px;
-  color: #e81a07;
+  color: #93bf85;
   padding: 0 20px;
   display: block;
   transition: all 0.3s;
 }
 #header .menu_top ul li a:hover {
-  color: #f6bdb8;
+  color: #fff;
 }
 /*#header .header {
   border-bottom: 1px solid #fff;
@@ -148,7 +148,7 @@ a {
   justify-content: space-between;
 }
 #header .logo {
-  max-width: 160px;
+  max-width: 190px;
 }
 
 /* Menu */
@@ -429,7 +429,7 @@ a {
   padding-right: 0;
 }
 .menu > ul > li > a {
-  color: #080000; /*chữ ở phần body*/
+  color: #075d43; /*chữ ở phần body*/
   text-decoration: none;
   font-size: 14px;
   font-family: "RobotoSlab-Bold";
@@ -444,11 +444,11 @@ a {
   height: 100%;
 }
 .menu > ul > li:hover > a {
-  color: #b81809;
+  color: #50d141; /*Gioi thieu chung*/
 }
-.menu > ul > li.active > a {
-  color: #b81809;
-}
+/*.menu > ul > li.active > a {
+  color: #075d43;
+}*/
 .menu ul li ul {
   background: #fff;
   position: absolute;
@@ -526,7 +526,7 @@ a {
   margin-right: 7px;
 }
 .menu ul > li ul li:hover > a {
-  color: #b81809;
+  color: #1ce8ab; /*Chữ có gạch chân*/
   text-decoration: underline;
 }
 .menu ul li ul li ul {
@@ -539,7 +539,7 @@ a {
 .news-home {
   width: 100%;
   padding: 2px 0 55px 0;
-  background: linear-gradient(to bottom, #080000, #b81809);
+  background: linear-gradient(to bottom, #fff, #bfffc7);
 }
 
 /* Footer */
@@ -615,6 +615,3 @@ a {
     transform: translateY(-10px);
   }
 }
-
-
-
