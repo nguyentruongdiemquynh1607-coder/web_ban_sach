@@ -1,9 +1,9 @@
-/* 🌐 Modern Login Style inspired by Google / Facebook (2025) */
+/* 🌿 Modern Login - Green & Beige Theme (2025) */
 @import url("https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600&display=swap");
 
 body {
   font-family: "Google Sans", Roboto, sans-serif;
-  background: #f7f9fc;
+  background: #f9f7f1; /* beige background */
   margin: 0;
   padding: 0;
 }
@@ -16,11 +16,11 @@ body {
 }
 
 .login-card {
-  background: #fff;
+  background: #ffffff;
   width: 380px;
   padding: 40px 36px;
   border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 20px rgba(46, 125, 50, 0.08); /* subtle green tint */
   text-align: center;
   transition: transform 0.2s ease;
 }
@@ -29,6 +29,7 @@ body {
   transform: translateY(-3px);
 }
 
+/* Logo + Title */
 .login-logo {
   width: 48px;
   height: 48px;
@@ -37,16 +38,17 @@ body {
 
 .login-title {
   font-size: 22px;
-  color: #202124;
+  color: #2c2c2c;
   margin: 6px 0;
 }
 
 .login-subtitle {
-  color: #5f6368;
+  color: #5f5f5f;
   font-size: 14px;
   margin-bottom: 20px;
 }
 
+/* Form */
 .login-form {
   text-align: left;
   display: flex;
@@ -56,7 +58,7 @@ body {
 
 .form-group label {
   font-size: 13px;
-  color: #555;
+  color: #444;
   margin-bottom: 4px;
   display: block;
 }
@@ -64,7 +66,7 @@ body {
 .form-group input {
   width: 100%;
   padding: 12px 14px;
-  border: 1px solid #dadce0;
+  border: 1px solid #d7ccc8; /* beige-gray border */
   border-radius: 8px;
   font-size: 15px;
   outline: none;
@@ -72,15 +74,16 @@ body {
 }
 
 .form-group input:focus {
-  border-color: #1a73e8;
-  box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.15);
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.15);
 }
 
+/* Submit Button */
 button[type="submit"] {
   width: 100%;
   margin-top: 8px;
   padding: 12px 0;
-  background: #1a73e8;
+  background: #2e7d32; /* green */
   color: white;
   border: none;
   border-radius: 8px;
@@ -91,7 +94,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background: #1669c1;
+  background: #256628; /* darker green */
 }
 
 button[disabled] {
@@ -99,14 +102,15 @@ button[disabled] {
   cursor: not-allowed;
 }
 
+/* Register Link */
 .register-link {
   margin-top: 18px;
   font-size: 13.5px;
-  color: #5f6368;
+  color: #5f5f5f;
 }
 
 .register-link a {
-  color: #1a73e8;
+  color: #2e7d32;
   text-decoration: none;
 }
 
@@ -127,7 +131,7 @@ button[disabled] {
   align-items: center;
   gap: 8px;
   padding: 10px 16px;
-  border: 1px solid #dadce0;
+  border: 1px solid #d7ccc8;
   border-radius: 8px;
   background: #fff;
   font-size: 14px;
@@ -137,19 +141,20 @@ button[disabled] {
   transition: background 0.2s, box-shadow 0.2s;
 }
 
+.social-btn:hover {
+  background: #f3efe8; /* màu be hover */
+}
+
 .social-btn img {
   width: 20px;
   height: 20px;
 }
 
-.social-btn:hover {
-  background: #f1f3f4;
-}
-
+/* Brand color tweaks sửa màu */
 .google span {
-  color: #202124;
+  color: #2c2c2c;
 }
 
 .facebook span {
-  color: #1877f2;
+  color: #2e7d32; /* ui green tone */
 }
