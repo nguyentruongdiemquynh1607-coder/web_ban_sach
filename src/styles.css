@@ -13,9 +13,9 @@
 }
 
 .t1-card:hover {
-  border: 1px solid #ff1e1e;
+  border: 1px solid #94ffa0;
   transform: translateY(-6px);
-  box-shadow: 0 0 15px rgba(255, 30, 30, 0.3);
+  box-shadow: 0 0 15px rgba(30, 255, 30, 0.3);
 }
 
 /* Hình ảnh sản phẩm */
@@ -42,7 +42,7 @@
 /* Phần thông tin */
 .t1-card-info {
   background-color: #2a2929;
-  border-top: 1px solid #ff1e1e;
+  border-top: 1px solid #94ffa0;
   padding: 14px 10px;
   text-align: left;
 }
