@@ -19,7 +19,7 @@ const Footer = () => {
 
             <p>Điện thoại: (028)7301.1306</p>
 
-            <p>Email: SKTelecom@gmail.com</p>
+            <p>Email: HKTqcom@gmail.com</p>
           </div>
           <div class="banner_footer"></div>
         </div>
@@ -27,10 +27,16 @@ const Footer = () => {
       <div class="copyright">
         <div class="container_main">
           <p>
-            © 2024 Demo bởi thầy Gia.<a> | Sitemap</a>
+            © 2025 Design bởi Yến Khoa.<a> | Sitemap</a>
           </p>
           <p>
             © 2025 Design bởi Diễm Quỳnh.<a> | Sitemap</a>
+          </p>
+          <p>
+            © 2025 Design bởi Thái Hòa.<a> | Sitemap</a>
+          </p>
+          <p>
+            © 2025 Design bởi Nhân Tâm.<a> | Sitemap</a>
           </p>
         </div>
       </div>
