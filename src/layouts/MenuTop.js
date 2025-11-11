@@ -1,4 +1,21 @@
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 const MenuTop = () => {
+  const [user, setUser] = useState(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem("user");
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    }
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem("user");
+    setUser(null);
+    navigate("/login");
+  };
   return (
     <div class="menu_top">
       <ul>
@@ -40,12 +57,23 @@ const MenuTop = () => {
             target="blank"
             href="https://drive.google.com/file/d/1i0dE785sZgkMck2-j_z-kUJT8dYFWZFn/view?usp=sharing"
           >
-            E-Brochure
+            &nbsp;&nbsp;&nbsp;&nbsp;
           </a>
         </li>
 
         <li>
-          <a href="lien-he">Liên hệ</a>
+          {user ? (
+            <>
+              <span className="username">👤 {user.username}</span>
+              <button className="logout-btn" onClick={handleLogout}>
+                Đăng xuất
+              </button>
+            </>
+          ) : (
+            <a href="/login" className="login-link">
+              Đăng nhập
+            </a>
+          )}
         </li>
       </ul>
     </div>
