@@ -75,7 +75,9 @@ const ProductDetail = () => {
 
         <div style={{ flex: "1 1 300px" }}>
           <h2>{product.title}</h2>
-          <p style={{ color: "#e63946", fontSize: "1.2rem", fontWeight: "bold" }}>
+          <p
+            style={{ color: "#e63946", fontSize: "1.2rem", fontWeight: "bold" }}
+          >
             ${product.price}
           </p>
           <p>
