@@ -20,6 +20,7 @@ import ProductDetail from "./ProductDetail";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import AddProduct from "./AddProduct";
 //@ts-ignore
 import LoginPage from "./LoginPage";
 //@ts-ignore
@@ -56,8 +57,10 @@ export default function App() {
               </ProtectedRoute>
             }
           />
+          <Route path="/addproduct" element={<AddProduct />} />
         </Route>
       </Routes>
     </BrowserRouter>
   );
 }
+
