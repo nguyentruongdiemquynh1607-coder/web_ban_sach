@@ -4,8 +4,8 @@ import { supabase } from "./supabaseClient";
 
 const ProductDetail = () => {
   const { id } = useParams();
-  const [product, setProduct] = useState(null);
   const navigate = useNavigate();
+  const [product, setProduct] = useState(null);
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -15,24 +15,16 @@ const ProductDetail = () => {
           .select("*")
           .eq("id", id)
           .single();
-
         if (error) throw error;
         setProduct(data);
       } catch (err) {
         console.error("Lỗi khi lấy dữ liệu sản phẩm:", err.message);
       }
     };
-
     fetchProduct();
   }, [id]);
 
-  if (!product) {
-    return (
-      <div style={{ textAlign: "center", marginTop: "40px" }}>
-        <p>Đang tải thông tin sản phẩm...</p>
-      </div>
-    );
-  }
+  if (!product) return <p style={{ textAlign: "center" }}>Đang tải...</p>;
 
   return (
     <div
@@ -58,18 +50,10 @@ const ProductDetail = () => {
           marginBottom: "20px",
         }}
       >
-        ← Quay lại danh sách
+        ← Quay lại
       </button>
 
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "30px",
-          alignItems: "flex-start",
-        }}
-      >
-        {/* Hình ảnh sản phẩm */}
+      <div style={{ display: "flex", gap: "30px", flexWrap: "wrap" }}>
         <div
           style={{
             flex: "1 1 300px",
@@ -85,39 +69,23 @@ const ProductDetail = () => {
           <img
             src={product.image}
             alt={product.title}
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "contain",
-            }}
+            style={{ width: "100%", objectFit: "contain" }}
           />
         </div>
 
-        {/* Thông tin chi tiết */}
         <div style={{ flex: "1 1 300px" }}>
-          <h2 style={{ marginBottom: "10px" }}>{product.title}</h2>
-          <p
-            style={{ fontSize: "1.2rem", color: "#e63946", fontWeight: "bold" }}
-          >
+          <h2>{product.title}</h2>
+          <p style={{ color: "#e63946", fontSize: "1.2rem", fontWeight: "bold" }}>
             ${product.price}
           </p>
-
-          <p style={{ marginTop: "10px", color: "#555" }}>
+          <p>
             ⭐ {product.rating_rate} ({product.rating_count} đánh giá)
           </p>
-
-          <p
-            style={{
-              marginTop: "20px",
-              lineHeight: "1.6",
-              color: "#333",
-              textAlign: "justify",
-            }}
-          >
-            {product.description || "Chưa có mô tả cho sản phẩm này."}
+          <p style={{ marginTop: "20px", lineHeight: "1.6" }}>
+            {product.description}
           </p>
-
           <button
+            onClick={() => alert("🛒 Đã thêm vào giỏ hàng!")}
             style={{
               marginTop: "20px",
               backgroundColor: "#28a745",
@@ -127,7 +95,6 @@ const ProductDetail = () => {
               borderRadius: "6px",
               cursor: "pointer",
             }}
-            onClick={() => alert("Đã thêm vào giỏ hàng!")}
           >
             🛒 Thêm vào giỏ hàng
           </button>
