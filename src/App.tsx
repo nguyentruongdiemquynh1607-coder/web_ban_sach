@@ -10,8 +10,8 @@ import Trang1 from "./Trang1";
 import Member from "./Member";
 //@ts-ignore
 import ListProducts_SP from "./ListProducts_SP";
-//@ts-ignore
-import ProductDetail from "./ProductDetail";
+  //@ts-ignore
+  import ProductDetail from "./ProductDetail";
 //@ts-ignore
 import AddProduct from "./AddProduct";
 //@ts-ignore
